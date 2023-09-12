@@ -15,12 +15,12 @@ Then just add `import Stepper from 'react-stepper-horizontal';` into your file.
 render() {
   return (
     <div>
-      <Stepper steps={ [{title: 'Step One'}, {title: 'Step Two'}, {title: 'Step Three'}, {title: 'Step Four'}] } activeStep={ 1 } />
+      <Stepper steps={ [{title: 'Step One'}, {title: 'Step Two'}, {title: 'Step Three'}, {title: 'Step Four'}] } activeStep={ 1 } rtl={true} />
     </div>
   );
 }
 ```
-See full example [here](https://github.com/mu29/react-stepper/blob/master/example/example.js)
+See full example [here](https://github.com/stepbystepsoftware/react-stepper/blob/master/example/example.js)
 
 ## API
 
@@ -71,7 +71,7 @@ See full example [here](https://github.com/mu29/react-stepper/blob/master/exampl
 
 ## Author
 
-InJung Chung / [@mu29](http://mu29.github.io/)
+Mohamed Abdelaziz / [@Step by Step](https://stepbystepsoftware.com/)
 
 ## License
 

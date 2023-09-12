@@ -1,7 +1,7 @@
 {
-  "name": "react-stepper-horizontal",
-  "version": "1.0.11",
-  "description": "Well-designed stepper component for react",
+  "name": "react-stepper-horizontal-rtl",
+  "version": "0.0.2",
+  "description": "Stepper component for react with RTL support, based on react-stepper-horizontal",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mu29/react-stepper.git"
+    "url": "git+https://github.com/StepByStepSoftware/react-stepper.git"
   },
   "keywords": [
     "facebook",
@@ -21,12 +21,12 @@
     "stepper",
     "step"
   ],
-  "author": "InJung Chung <mu29@yeoubi.net>",
+  "author": "Mohamed Abdelaziz <maziz@stepbystepsoftware.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mu29/react-stepper/issues"
+    "url": "https://github.com/StepByStepSoftware/react-stepper/issues"
   },
-  "homepage": "https://github.com/mu29/react-stepper#readme",
+  "homepage": "https://github.com/StepByStepSoftware/react-stepper#readme",
   "devDependencies": {
     "babel-cli": "^6.16.0",
     "babel-loader": "^6.2.5",
@@ -38,8 +38,13 @@
     "node": ">= 5.11.0"
   },
   "dependencies": {
+    "fsevents": "^2.3.3",
     "prop-types": "^15.5.10",
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
+  },
+  "directories": {
+    "example": "example",
+    "lib": "lib"
   }
 }

@@ -15,8 +15,30 @@ export default class Step extends Component {
       circleTop, titleTop, width, completeOpacity, activeOpacity, defaultOpacity,
       completeTitleOpacity, activeTitleOpacity, defaultTitleOpacity, barStyle, defaultBarColor,
       completeBarColor, defaultBorderColor, completeBorderColor, activeBorderColor,
-      defaultBorderStyle,completeBorderStyle, activeBorderStyle, lineMarginOffset, defaultBorderWidth
+      defaultBorderStyle,completeBorderStyle, activeBorderStyle, lineMarginOffset, defaultBorderWidth, rtl
     } = this.props;
+
+    var leftBarLeft = 0;
+    var leftBarRight = '50%';
+    var leftBarMarginLeft = 0;
+    var leftBarMarginRight = size / 2 + lineMarginOffset;
+
+    var rightBarLeft = '50%';
+    var rightBarRight = 0;
+    var rightBarMarginLeft = size / 2 + lineMarginOffset;
+    var rightBarMarginRight = 0;
+    
+    if(rtl){
+      leftBarLeft = '50%';
+      leftBarRight = 0;
+      leftBarMarginLeft = size / 2 + lineMarginOffset;
+      leftBarMarginRight = 0;
+      
+      rightBarLeft = 0;
+      rightBarRight = '50%';
+      rightBarMarginLeft = 0;
+      rightBarMarginRight = size / 2 + lineMarginOffset;
+    }
 
     return {
       step: {
@@ -83,9 +105,10 @@ export default class Step extends Component {
         borderTopStyle: barStyle,
         borderTopWidth: 1,
         borderTopColor: defaultBarColor,
-        left: 0,
-        right: '50%',
-        marginRight: size / 2 + lineMarginOffset,
+        left: leftBarLeft,
+        right: leftBarRight,        
+        marginLeft: leftBarMarginLeft,
+        marginRight: leftBarMarginRight,
         opacity: defaultOpacity,
       },
       rightBar: {
@@ -95,9 +118,10 @@ export default class Step extends Component {
         borderTopStyle: barStyle,
         borderTopWidth: 1,
         borderTopColor: defaultBarColor,
-        right: 0,
-        left: '50%',
-        marginLeft: size / 2 + lineMarginOffset,
+        left: rightBarLeft,
+        right: rightBarRight,
+        marginLeft: rightBarMarginLeft,
+        marginRight: rightBarMarginRight,
         opacity: defaultOpacity,
       },
       completedBar: {

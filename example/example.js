@@ -55,7 +55,7 @@ class App extends Component {
 
     return (
       <div>
-        <Stepper steps={ steps } activeStep={ currentStep } disabledSteps={ [2] } />
+        <Stepper steps={ steps } activeStep={ currentStep } disabledSteps={ [2] } rtl={true} />
         <div style={ buttonStyle } onClick={ this.onClickNext }>Next</div>
       </div>
     );
