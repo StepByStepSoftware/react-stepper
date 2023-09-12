@@ -1,6 +1,6 @@
 {
   "name": "react-stepper-horizontal-rtl",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Stepper component for react with RTL support, based on react-stepper-horizontal",
   "main": "lib/index.js",
   "scripts": {

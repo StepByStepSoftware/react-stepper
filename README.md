@@ -3,12 +3,12 @@ Well-designed stepper component for react
 
 ## Installation
 ```
-npm install react-stepper-horizontal --save
+npm install react-stepper-horizontal-rtl --save
 ```
-Then just add `import Stepper from 'react-stepper-horizontal';` into your file.
+Then just add `import Stepper from 'react-stepper-horizontal-rtl';` into your file.
 
 ## Screenshot
-<img src="https://raw.githubusercontent.com/mu29/react-stepper/master/example/example.png" width="600" />
+<img src="https://raw.githubusercontent.com/stepbystepsoftware/react-stepper/master/example/example.png" width="600" />
 
 ## Usage
 ```
@@ -59,6 +59,7 @@ See full example [here](https://github.com/stepbystepsoftware/react-stepper/blob
 |completeBarColor|Color of bar connected to a completed step|#E0E0E0|string|
 |lineMarginOffset|Offset for line margin|4|number|
 |defaultBorderWidth|Default Border Width|3|number|
+|rtl|Stepper RTL direction flag|false|boolean|
 
 ### Step Objects
 | name     | description    | default    | type   |
